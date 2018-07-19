@@ -9,7 +9,11 @@ public class NormalUserTest {
     @Test
     public void normalUserTest(){
         System.out.println(JDBCUtil.class.getClassLoader().getResource("db.properties").getPath());
-        NormalUser normal_user = new NormalUser("zhang","chen","ºº ı≤ø");
-        new NormalUserDao().insert(normal_user);
+        NormalUser normalUser=new NormalUserDao().select("chen");
+        System.out.println(normalUser.getDepartment());
+        System.out.println(normalUser.getUser_password().equals("chen"));
+        System.out.println(normalUser.getUser_name());
+        System.out.println(normalUser);
+
     }
 }

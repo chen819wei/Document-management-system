@@ -2,6 +2,7 @@ package dao;
 
 import Util.JDBCUtil;
 import entity.NormalUser;
+import org.apache.commons.dbutils.handlers.BeanHandler;
 
 public class NormalUserDao {
     public int insert(NormalUser normal_user) {
@@ -14,5 +15,15 @@ public class NormalUserDao {
             return 1;
         }
 
+    }
+    public NormalUser select(String user_name) {
+
+        try {
+            String selectSQL = "select * from NormalUser where user_name=?";
+            return JDBCUtil.queryRunner().query(selectSQL, new BeanHandler<NormalUser>(NormalUser.class), user_name);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
