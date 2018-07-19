@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="gson-2.8.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/gson-2.8.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-dbutils-1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
