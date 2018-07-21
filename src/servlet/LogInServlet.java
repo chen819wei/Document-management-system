@@ -1,9 +1,11 @@
 package servlet;
 
 import dao.AdminUserDao;
+import dao.AdministratorDao;
 import dao.NormalUserDao;
 import dao.NoticeDao;
 import entity.AdminUser;
+import entity.Administrator;
 import entity.NormalUser;
 
 import javax.servlet.ServletException;
@@ -75,7 +77,7 @@ public class LogInServlet extends HttpServlet {
                     try {
                         //将用户信息传递到用户界面
                         request.setAttribute("adminUser", adminUser);
-                        request.getRequestDispatcher("/normalUser.jsp").forward(request, response);
+                        request.getRequestDispatcher("/adminUser.jsp").forward(request, response);
                     } catch (ServletException e) {
                         e.printStackTrace();
                     }
@@ -89,7 +91,27 @@ public class LogInServlet extends HttpServlet {
             }
 
         } else {
-            System.out.println("管理员");
+            //查询该用户信息
+            Administrator administrator = new AdministratorDao().select(user_name);
+            //判断账号是否存在
+            if (administrator != null) {
+                if (user_name.equals(administrator.getUser_name())
+                        && request.getParameter("user_password").equals(administrator.getUser_password())) {
+                    try {
+                        //将用户信息传递到用户界面
+                        request.setAttribute("administrator", administrator);
+                        request.getRequestDispatcher("/administrator.jsp").forward(request, response);
+                    } catch (ServletException e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    out.print("<script language='javascript'>alert('账号或者密码错误');window.location.href='index.jsp';</script>");
+                    out.close();
+                }
+            } else {
+                out.print("<script language='javascript'>alert('账号不存在');window.location.href='index.jsp';</script>");
+                out.close();
+            }
         }
     }
 

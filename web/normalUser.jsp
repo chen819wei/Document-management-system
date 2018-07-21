@@ -29,7 +29,7 @@
         //取出每一个公文显示
         for (Notice n : notices) {
             out.write("<li>");
-            out.write("<a href='/noticeShow.jsp?name="+n.getNotice_id()+"'"+" target='view_window'>");
+            out.write("<a href='"+request.getContextPath()+"/noticeShow.jsp?name="+n.getNotice_id()+"'"+" target='view_window'>");
             out.write("标题:" + n.getTitle() + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp"
                     + "部门:" + n.getDepartment()+ "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp"
                     + "发布时间:"+n.getRelease_time());
