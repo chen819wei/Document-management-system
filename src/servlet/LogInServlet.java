@@ -1,7 +1,9 @@
 package servlet;
 
+import dao.AdminUserDao;
 import dao.NormalUserDao;
 import dao.NoticeDao;
+import entity.AdminUser;
 import entity.NormalUser;
 
 import javax.servlet.ServletException;
@@ -64,9 +66,28 @@ public class LogInServlet extends HttpServlet {
 
 
         } else if (radio.equals("公文管理用户")) {
-            System.out.println("公文管理用户");
-            out.print("<script language='javascript'>alert('账号或者密码错误');window.location.href='index.jsp';</script>");
-            out.close();
+            //查询该用户信息
+            AdminUser adminUser = new AdminUserDao().select(user_name);
+            //判断账号是否存在
+            if (adminUser != null) {
+                if (user_name.equals(adminUser.getUser_name())
+                        && request.getParameter("user_password").equals(adminUser.getUser_password())) {
+                    try {
+                        //将用户信息传递到用户界面
+                        request.setAttribute("adminUser", adminUser);
+                        request.getRequestDispatcher("/normalUser.jsp").forward(request, response);
+                    } catch (ServletException e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    out.print("<script language='javascript'>alert('账号或者密码错误');window.location.href='index.jsp';</script>");
+                    out.close();
+                }
+            } else {
+                out.print("<script language='javascript'>alert('账号不存在');window.location.href='index.jsp';</script>");
+                out.close();
+            }
+
         } else {
             System.out.println("管理员");
         }
