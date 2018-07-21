@@ -12,7 +12,9 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.jsp.PageContext;
 import java.io.IOException;
 import java.io.PrintWriter;
-
+/*
+* 用户登录servlet
+* */
 @WebServlet(urlPatterns = {"/LogInServlet"},name = "LogInServlet")
 public class LogInServlet extends HttpServlet {
 
@@ -20,12 +22,15 @@ public class LogInServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
+        //获取用户选择的是哪个类型的用户
         String radio =request.getParameter("user");
+        //获取用户名
         String user_name=request.getParameter("user_name");
 
         //判断是否为普通用户
         if (radio.equals("普通用户")) {
             System.out.println("普通用户");
+            //查询该用户信息
             NormalUser normalUser=new NormalUserDao().select(user_name);
             //判断账号是否存在
             if (normalUser != null) {
@@ -33,12 +38,11 @@ public class LogInServlet extends HttpServlet {
                 if (user_name.equals(normalUser.getUser_name())
                         && request.getParameter("user_password").equals(normalUser.getUser_password())) {
                     //response.sendRedirect("/normalUser.jsp");
-
                     /*HttpSession session = request.getSession();
                     session.setAttribute("name",request.getParameter("user_name"));*/
-
                    // request.getSession().setAttribute("user_name ",user_name);
                     try {
+                        //讲用户信息传递到用户界面
                         request.setAttribute("user_name",normalUser);
                         System.out.println(request.getAttribute("user_name"));
                         request.getRequestDispatcher("/normalUser.jsp").forward(request,response);

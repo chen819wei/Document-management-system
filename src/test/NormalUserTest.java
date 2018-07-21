@@ -2,8 +2,12 @@ package test;
 
 import Util.JDBCUtil;
 import dao.NormalUserDao;
+import dao.NoticeDao;
 import entity.NormalUser;
 import org.junit.jupiter.api.Test;
+/*
+* 测试类
+* */
 
 public class NormalUserTest {
     @Test
@@ -14,6 +18,9 @@ public class NormalUserTest {
         System.out.println(normalUser.getUser_password().equals("chen"));
         System.out.println(normalUser.getUser_name());
         System.out.println(normalUser);
-
+    }
+    @Test
+    public void noticeTest() {
+        System.out.println(new NoticeDao().selectAll("技术部"));
     }
 }

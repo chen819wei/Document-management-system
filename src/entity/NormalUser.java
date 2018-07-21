@@ -1,8 +1,13 @@
 package entity;
-
+/*
+* 普通用户实体类
+* */
 public class NormalUser {
+    //用户名
     private String user_name;
+    //用户密码
     private String user_password;
+    //所属部门
     private String department;
 
     public NormalUser(String user_name, String user_password, String department) {

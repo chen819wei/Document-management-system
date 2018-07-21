@@ -1,11 +1,12 @@
 package entity;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Setter@Getter
+/*
+* 管理员实体类
+* */
 public class Administrator {
+    //管理员账号
     private String user_name;
+    //管理员密码
     private String user_password;
 
     @Override

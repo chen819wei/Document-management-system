@@ -5,9 +5,10 @@ import org.apache.commons.dbutils.QueryRunner;
 
 import javax.sql.DataSource;
 import java.io.FileInputStream;
-import java.sql.Connection;
 import java.util.Properties;
-
+/*
+* 数据库连接
+* */
 public class JDBCUtil {
     public static DataSource ds = null;
 
@@ -26,14 +27,5 @@ public class JDBCUtil {
 
     public static  QueryRunner queryRunner(){
         return new QueryRunner(ds);
-    }
-    public static Connection getConnection() {
-        try {
-            // 2.连接数据
-            return ds.getConnection();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
     }
 }
