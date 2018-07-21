@@ -21,7 +21,6 @@ public class NormalUserDao {
     }
     //根据用户名查看用户信息
     public NormalUser select(String user_name) {
-
         try {
             String selectSQL = "select * from NormalUser where user_name=?";
             return JDBCUtil.queryRunner().query(selectSQL, new BeanHandler<NormalUser>(NormalUser.class), user_name);

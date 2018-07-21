@@ -1,6 +1,7 @@
 package servlet;
 
 import dao.NormalUserDao;
+import dao.NoticeDao;
 import entity.NormalUser;
 
 import javax.servlet.ServletException;
@@ -42,9 +43,11 @@ public class LogInServlet extends HttpServlet {
                     session.setAttribute("name",request.getParameter("user_name"));*/
                    // request.getSession().setAttribute("user_name ",user_name);
                     try {
-                        //讲用户信息传递到用户界面
+                        //将用户信息传递到用户界面
                         request.setAttribute("user_name",normalUser);
                         System.out.println(request.getAttribute("user_name"));
+                        //将部门信息传过去
+                        request.setAttribute("department",new NoticeDao().selectAll(normalUser.getDepartment()));
                         request.getRequestDispatcher("/normalUser.jsp").forward(request,response);
                     } catch (ServletException e) {
                         e.printStackTrace();

@@ -1,5 +1,8 @@
 <%@ page import="dao.NormalUserDao" %>
-<%@ page import="entity.NormalUser" %><%--
+<%@ page import="entity.NormalUser" %>
+<%@ page import="java.util.List" %>
+<%@ page import="entity.Notice" %>
+<%@ page import="java.sql.SQLOutput" %><%--
   Created by IntelliJ IDEA.
   User: chen
   Date: 2018/7/19
@@ -20,6 +23,23 @@
 部门:<%= normalUser.getDepartment()%><br>
 <hr>
 <h3>公文列表</h3><br>
+<%
+    List<Notice> notices = (List<Notice>) request.getAttribute("department");
+    if (notices != null) {
+        //取出每一个公文显示
+        for (Notice n : notices) {
+            out.write("<li>");
+            out.write("<a href='/noticeShow.jsp?name="+n.getNotice_id()+"'"+" target='view_window'>");
+            out.write("标题:" + n.getTitle() + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp"
+                    + "部门:" + n.getDepartment()+ "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp"
+                    + "发布时间:"+n.getRelease_time());
+            out.write("</a>");
+            out.write("</li>");
+        }
+    } else {
+        out.write("没有公文");
+    }
+%>
 
 
 </body>
