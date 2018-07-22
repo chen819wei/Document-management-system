@@ -20,7 +20,12 @@
 账号:<%= adminUser.getUser_name()%> <br>
 部门:<%= adminUser.getDepartment()%><br>
 <hr>
-<h3>公文列表</h3><br>
+<h3>公文列表</h3>
+<%
+    out.write("&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "<a href='" + request.getContextPath() + "/releaseNotice.jsp' target='view_window'>");
+    out.write("发布公文");
+    out.write("</a>");
+%><br>
 <%
     List<Notice> notices = (List<Notice>) request.getAttribute("department");
     if (notices != null) {

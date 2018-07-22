@@ -13,6 +13,11 @@ public class AdminUser {
     //公文管理用户部门
     private String department;
 
+    public AdminUser(String user_name, String user_password, String department) {
+        this.user_name = user_name;
+        this.user_password = user_password;
+        this.department = department;
+    }
 
 
     public String getUser_name() {

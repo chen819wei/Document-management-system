@@ -14,6 +14,12 @@ public class NormalUser {
     private String department;
 
 
+    public NormalUser(String user_name, String user_password, String department) {
+        this.user_name = user_name;
+        this.user_password = user_password;
+        this.department = department;
+    }
+
     public NormalUser() {
     }
 
