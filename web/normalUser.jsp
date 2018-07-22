@@ -27,15 +27,18 @@
     List<Notice> notices = (List<Notice>) request.getAttribute("department");
     if (notices != null) {
         //取出每一个公文显示
+        out.write("<ol>");
         for (Notice n : notices) {
             out.write("<li>");
-            out.write("<a href='"+request.getContextPath()+"/noticeShow.jsp?name="+n.getNotice_id()+"'"+" target='view_window'>");
+            out.write("<a href='" + request.getContextPath() + "/noticeShow.jsp?name=" + n.getNotice_id() + "'" + " target='view_window'>");
             out.write("标题:" + n.getTitle() + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp"
-                    + "部门:" + n.getDepartment()+ "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp"
-                    + "发布时间:"+n.getRelease_time());
+                    + "部门:" + n.getDepartment() + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp"
+                    + "发布时间:" + n.getRelease_time());
             out.write("</a>");
             out.write("</li>");
         }
+        out.write("</ol>");
+
     } else {
         out.write("没有公文");
     }

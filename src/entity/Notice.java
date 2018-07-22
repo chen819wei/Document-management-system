@@ -26,6 +26,12 @@ public class Notice {
         this.release_time = release_time;
     }
 
+    public Notice(String title, String department, String notice) {
+        this.title = title;
+        this.notice = notice;
+        this.department = department;
+    }
+
     public int getNotice_id() {
         return notice_id;
     }

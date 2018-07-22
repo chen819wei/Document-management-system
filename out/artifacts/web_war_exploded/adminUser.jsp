@@ -1,4 +1,7 @@
-<%--
+<%@ page import="entity.Notice" %>
+<%@ page import="java.util.List" %>
+<%@ page import="entity.AdminUser" %>
+<%@ page import="dao.AdminUserDao" %><%--
   Created by IntelliJ IDEA.
   User: chen
   Date: 2018/7/21
@@ -11,6 +14,38 @@
     <title>公文管理用户</title>
 </head>
 <body>
-公文管理用户
+<h1>公文管理用户</h1>
+<%AdminUser normal = (AdminUser) request.getAttribute("adminUser");%>
+<%AdminUser adminUser = new AdminUserDao().select(normal.getUser_name());%>
+账号:<%= adminUser.getUser_name()%> <br>
+部门:<%= adminUser.getDepartment()%><br>
+<hr>
+<h3>公文列表</h3><br>
+<%
+    List<Notice> notices = (List<Notice>) request.getAttribute("department");
+    if (notices != null) {
+        //取出每一个公文显示
+        out.write("<ol>");
+        for (Notice n : notices) {
+            out.write("<li>");
+            out.write("<a href='" + request.getContextPath() + "/noticeShow.jsp?name=" + n.getNotice_id() + "'" + " target='view_window'>");
+            out.write("标题:" + n.getTitle() + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp"
+                    + "部门:" + n.getDepartment() + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp"
+                    + "发布时间:" + n.getRelease_time());
+            out.write("</a>");
+            out.write("&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "<a href='" + request.getContextPath() + "/DeleteServlet?delete_id=" + n.getNotice_id() + "'" + " target='view_window'>");
+            out.write("删除");
+            out.write("</a>");
+            out.write("&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "<a href='" + request.getContextPath() + "/noticeChange.jsp?change_id=" + n.getNotice_id() + "'" + " target='view_window'>");
+            out.write("修改");
+            out.write("</a>");
+            out.write("</li>");
+        }
+        out.write("</ol>");
+
+    } else {
+        out.write("没有公文");
+    }
+%>
 </body>
 </html>

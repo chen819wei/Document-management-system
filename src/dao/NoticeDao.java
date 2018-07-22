@@ -46,10 +46,10 @@ public class NoticeDao {
     }
 
     //根据公文id更新公文
-    public int update(Notice notice) {
-        String updateSQL="UPDATE notice SET title=?, notice='?,department=? where notice_id=?";
+    public int update(Notice notice,int notice_id) {
+        String updateSQL="UPDATE notice SET title=?,notice=?,department=? where notice_id=?";
         try {
-            JDBCUtil.queryRunner().update(updateSQL, notice.getTitle(),notice.getNotice(),notice.getDepartment(),notice.getNotice_id());
+            JDBCUtil.queryRunner().update(updateSQL, notice.getTitle(),notice.getNotice(),notice.getDepartment(),notice_id);
             return 0;
         } catch (SQLException e) {
             e.printStackTrace();

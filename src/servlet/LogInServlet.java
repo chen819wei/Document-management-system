@@ -13,8 +13,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import javax.servlet.jsp.PageContext;
 import java.io.IOException;
 import java.io.PrintWriter;
 /*
@@ -77,6 +75,7 @@ public class LogInServlet extends HttpServlet {
                     try {
                         //将用户信息传递到用户界面
                         request.setAttribute("adminUser", adminUser);
+                        request.setAttribute("department",new NoticeDao().selectAll(adminUser.getDepartment()));
                         request.getRequestDispatcher("/adminUser.jsp").forward(request, response);
                     } catch (ServletException e) {
                         e.printStackTrace();
