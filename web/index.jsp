@@ -17,7 +17,6 @@
         <input type="radio" name="user" value="公文管理用户"/>公文管理用户<br>
         <input type="radio" name="user" value="管理员"/>管理员<br>
         <input type="submit" value="登录"/>
-
     </div>
 
 

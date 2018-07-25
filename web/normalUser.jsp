@@ -43,6 +43,19 @@
         out.write("没有公文");
     }
 %>
+<script language="javascript">
+    function exit() {
+        if
+        (confirm("您确定要退出登陆吗？")) {
+            window.opener = null;
+            window.open('/index.jsp', '_top')
+            window.close();
+        }
+        else {
+        }
+    }
+</script>
+<input type="button" value="退出登陆" onclick="exit();"/>
 
 
 </body>

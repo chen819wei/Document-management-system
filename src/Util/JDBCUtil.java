@@ -24,7 +24,6 @@ public class JDBCUtil {
             e.printStackTrace();
         }
     }
-
     public static  QueryRunner queryRunner(){
         return new QueryRunner(ds);
     }

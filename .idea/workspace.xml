@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="web:war exploded" />
+      <artifact name="xue" />
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
@@ -23,20 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="showAdminUser.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/showAdminUser.jsp">
+      <file leaf-file-name="changeAdminUser.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/changeAdminUser.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="38" column="136" selection-start-line="38" selection-start-column="136" selection-end-line="38" selection-end-column="136" />
+            <state relative-caret-position="81">
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="changeAdminUser.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/changeAdminUser.jsp">
+      <file leaf-file-name="adminUser.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/adminUser.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="546">
+              <caret line="51" selection-start-line="51" selection-end-line="52" />
             </state>
           </provider>
         </entry>
@@ -44,74 +44,71 @@
       <file leaf-file-name="showNormalUser.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/showNormalUser.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="189">
               <caret line="17" selection-start-line="17" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="changeNormalUser.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/changeNormalUser.jsp">
+      <file leaf-file-name="normalUser.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/normalUser.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="30" column="7" lean-forward="true" selection-start-line="14" selection-end-line="30" selection-end-column="7" />
+            <state relative-caret-position="290">
+              <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChangeAdminUserServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/ChangeAdminUserServlet.java">
+      <file leaf-file-name="administrator.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/administrator.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="506">
+              <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminUserDao.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dao/AdminUserDao.java">
+      <file leaf-file-name="addNormalUser.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/addNormalUser.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="74" column="15" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="695">
+              <caret line="34" column="6" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="34" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entity/AdminUser.java">
+      <file leaf-file-name="addDepartment.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/addDepartment.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            <state relative-caret-position="260">
+              <caret line="16" selection-start-line="16" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChangeNormalUserServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/ChangeNormalUserServlet.java">
+      <file leaf-file-name="addAdminUser.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/addAdminUser.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="15" column="54" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="55" />
+            <state relative-caret-position="783">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteNormalUserServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/DeleteNormalUserServlet.java">
+      <file leaf-file-name="changeDepartment.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/changeDepartment.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="236">
+              <caret line="19" column="40" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteAdminUserServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/DeleteAdminUserServlet.java">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+            <state relative-caret-position="530">
+              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -132,40 +129,48 @@
         <option value="$PROJECT_DIR$/src/servlet/Servlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/test/NormalUserTest.java" />
-        <option value="$PROJECT_DIR$/src/Util/JDBCUtil.java" />
         <option value="$PROJECT_DIR$/src/entity/Administrator.java" />
         <option value="$PROJECT_DIR$/src/servlet/NoticeShowServlet.java" />
         <option value="$PROJECT_DIR$/web/noticeShow.jsp" />
         <option value="$PROJECT_DIR$/src/dao/AdministratorDao.java" />
         <option value="$PROJECT_DIR$/src/servlet/DeleteServlet.java" />
         <option value="$PROJECT_DIR$/web/change.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/entity/Notice.java" />
         <option value="$PROJECT_DIR$/src/servlet/NoticeChangeServlet.java" />
-        <option value="$PROJECT_DIR$/web/noticeChange.jsp" />
-        <option value="$PROJECT_DIR$/web/normalUser.jsp" />
-        <option value="$PROJECT_DIR$/src/servlet/LogInServlet.java" />
-        <option value="$PROJECT_DIR$/web/releaseNotice.jsp" />
         <option value="$PROJECT_DIR$/web/adminUser.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/ReleaseNoticeServlet.java" />
         <option value="$PROJECT_DIR$/src/dao/NoticeDao.java" />
-        <option value="$PROJECT_DIR$/web/administrator.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/DeleteNormalUserServlet.java" />
         <option value="$PROJECT_DIR$/src/entity/NormalUser.java" />
         <option value="$PROJECT_DIR$/src/servlet/ChangeNormalUserServlet.java" />
-        <option value="$PROJECT_DIR$/web/changeNormalUser.jsp" />
-        <option value="$PROJECT_DIR$/web/addNormalUser.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/AddNormalUserServlet.java" />
         <option value="$PROJECT_DIR$/web/showNormalUser.jsp" />
         <option value="$PROJECT_DIR$/src/dao/NormalUserDao.java" />
-        <option value="$PROJECT_DIR$/src/dao/AdminUserDao.java" />
         <option value="$PROJECT_DIR$/src/entity/AdminUser.java" />
         <option value="$PROJECT_DIR$/src/servlet/AddAdminUserServlet.java" />
-        <option value="$PROJECT_DIR$/web/addAdminUser.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/DeleteAdminUserServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/ChangeAdminUserServlet.java" />
-        <option value="$PROJECT_DIR$/web/changeAdminUser.jsp" />
         <option value="$PROJECT_DIR$/web/showAdminUser.jsp" />
+        <option value="$PROJECT_DIR$/src/dao/AdminUserDao.java" />
+        <option value="$PROJECT_DIR$/src/Util/JDBCUtil.java" />
+        <option value="$PROJECT_DIR$/src/servlet/LogInServlet.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/showDepartment.jsp" />
+        <option value="$PROJECT_DIR$/web/addDepartment.jsp" />
+        <option value="$PROJECT_DIR$/src/entity/Department.java" />
+        <option value="$PROJECT_DIR$/src/servlet/addDepartmentServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/DeleteDepartmentServlet.java" />
+        <option value="$PROJECT_DIR$/web/administrator.jsp" />
+        <option value="$PROJECT_DIR$/src/dao/DepartmentDao.java" />
+        <option value="$PROJECT_DIR$/web/changeDepartment.jsp" />
+        <option value="$PROJECT_DIR$/src/servlet/ChangeDepartmentServlet.java" />
+        <option value="$PROJECT_DIR$/web/addNormalUser.jsp" />
+        <option value="$PROJECT_DIR$/web/addAdminUser.jsp" />
+        <option value="$PROJECT_DIR$/web/releaseNotice.jsp" />
+        <option value="$PROJECT_DIR$/web/noticeChange.jsp" />
+        <option value="$PROJECT_DIR$/web/changeNormalUser.jsp" />
+        <option value="$PROJECT_DIR$/web/changeAdminUser.jsp" />
+        <option value="$PROJECT_DIR$/web/normalUser.jsp" />
       </list>
     </option>
   </component>
@@ -207,7 +212,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,8 +288,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -537,11 +542,10 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32933104" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49571183" visible="true" weight="0.22390318" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49399656" visible="true" weight="0.22995462" />
       <window_info anchor="bottom" id="Problems" order="7" />
-      <window_info id="Web" order="2" sideWeight="0.50428814" side_tool="true" weight="0.22390318" />
+      <window_info id="Web" order="2" sideWeight="0.50600344" side_tool="true" weight="0.22995462" />
       <window_info id="JRebel" order="2" sideWeight="0.50085765" side_tool="true" weight="0.24962178" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32933104" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -550,6 +554,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32933104" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,62 +569,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/LogInServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/NormalUserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="13" column="69" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/normalUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/NormalUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/JDBCUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="35" selection-start-line="35" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/AdminUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/NormalUserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -670,21 +619,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/NoticeShowServlet.java" />
-    <entry file="file://$PROJECT_DIR$/src/Util/JDBCUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/NormalUserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="23" column="61" lean-forward="true" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
-          <folding>
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -695,84 +633,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/Notice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
           <caret line="31" column="36" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="36" />
-          <folding>
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#830#831#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
-            <element signature="e#1302#1303#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/normalUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="32" column="64" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/releaseNotice.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Administrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/LogInServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="100" column="59" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/administrator.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="31" column="78" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/noticeShow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="27" selection-start-line="27" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -780,23 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="28" column="9" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/adminUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/noticeChange.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="25" column="26" selection-start-line="14" selection-end-line="33" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -831,20 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/NormalUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="82" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/addNormalUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="13" selection-start-line="13" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/AddNormalUserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -852,52 +685,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddAdminUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/addAdminUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteNormalUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/DeleteAdminUserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="324">
           <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/ChangeNormalUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/changeNormalUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" column="7" lean-forward="true" selection-start-line="14" selection-end-line="30" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/showAdminUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="38" column="136" selection-start-line="38" selection-start-column="136" selection-end-line="38" selection-end-column="136" />
         </state>
       </provider>
     </entry>
@@ -908,34 +699,230 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/changeAdminUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/showNormalUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="17" selection-start-line="17" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/ChangeAdminUserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="324">
           <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/AdminUserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="74" column="15" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
+        <state relative-caret-position="1863">
+          <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/JDBCUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/LogInServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+          <folding>
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#109#110#0" expanded="true" />
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Administrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteNormalUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="13" column="55" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteDepartmentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddAdminUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/addDepartmentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/ChangeNormalUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/NormalUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="81" column="9" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="81" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/DepartmentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/ChangeDepartmentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="22" column="94" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/showDepartment.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/showAdminUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="48" column="2" lean-forward="true" selection-start-line="23" selection-end-line="48" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/releaseNotice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/noticeShow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/noticeChange.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/changeNormalUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="26" column="65" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/changeDepartment.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/changeAdminUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/adminUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="51" selection-start-line="51" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/addNormalUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="34" column="6" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="34" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/addDepartment.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="16" selection-start-line="16" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/addAdminUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/administrator.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/showNormalUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="17" selection-start-line="17" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/normalUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
         </state>
       </provider>
     </entry>

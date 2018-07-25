@@ -1,5 +1,8 @@
 <%@ page import="entity.NormalUser" %>
-<%@ page import="dao.NormalUserDao" %><%--
+<%@ page import="dao.NormalUserDao" %>
+<%@ page import="entity.Department" %>
+<%@ page import="java.util.List" %>
+<%@ page import="dao.DepartmentDao" %><%--
   Created by IntelliJ IDEA.
   User: chen
   Date: 2018/7/22
@@ -20,11 +23,22 @@
     密码:<input type="text" name="password" value="<%=normalUser.getUser_password()%>"/>
     <input type="text"  name="id" value="<%=normalUser.getUser_id()%>" style="display: none"/>
     部门:<select name="department">
-    <option value="行政部">行政部</option>
-    <option value="财务部">财务部</option>
-    <option value="质量管理部">质量管理部</option>
-    <option value="技术部">技术部</option>
-    <option value="人力资源部">人力资源部</option>
+    <%
+        List<Department> department = (List<Department>) new DepartmentDao().selectAll();
+        if (department != null) {
+            for (Department n : department) {
+                out.write("<li>");
+                out.write("<option>");
+                out.write(n.getDepartment_name() );
+                out.write("</option>");
+                out.write("</li>");
+            }
+
+
+        } else {
+            out.write("没有用户");
+        }
+    %>
 </select>
     <hr>
     <input type="submit" value="修改" style="width:200px;height: 30px;background:slategray"/>

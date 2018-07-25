@@ -29,7 +29,6 @@ public class LogInServlet extends HttpServlet {
         String radio =request.getParameter("user");
         //获取用户名
         String user_name=request.getParameter("user_name");
-
         //判断是否为普通用户
         if (radio.equals("普通用户")) {
             System.out.println("普通用户");
@@ -62,9 +61,6 @@ public class LogInServlet extends HttpServlet {
                 out.print("<script language='javascript'>alert('账号不存在');window.location.href='index.jsp';</script>");
                 out.close();
             }
-
-
-
         } else if (radio.equals("公文管理用户")) {
             //查询该用户信息
             AdminUser adminUser = new AdminUserDao().select(user_name);
