@@ -47,5 +47,12 @@
         out.write("没有用户");
     }
 %>
+<hr>
+<script language="javascript">
+    function exit() {
+            window.close();
+    }
+</script>
+<input type="button" value="退出" onclick="exit();"/>
 </body>
 </html>

@@ -26,7 +26,15 @@
     out.write("正文："+notice.getNotice());
     out.write("</p>");
     out.write("</li>");
+
 %>
+<hr>
+<script language="javascript">
+    function exit() {
+        window.close();
+    }
+</script>
+<input type="button" value="退出" onclick="exit();"/>
 
 
 </body>

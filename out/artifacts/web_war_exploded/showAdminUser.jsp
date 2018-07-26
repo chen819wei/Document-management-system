@@ -33,7 +33,7 @@
                     + "密码:" + n.getUser_password() + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp"
                     + "所属部门:" + n.getDepartment());
             out.write("</span>");
-            out.write("&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "<a href='" + request.getContextPath() + "/DeleteAdminUserServlet?delete_id=" + n.getAdminUser_id() + "'" + " >");
+            out.write("&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "<a href='" + request.getContextPath() + "/DeleteAdminUserServlet?delete_id=" + n.getAdminUser_id() + "'" + " target='_blank'>");
             out.write("删除");
             out.write("</a>");
             out.write("&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "<a href='" + request.getContextPath() + "/changeAdminUser.jsp?change_id=" + n.getAdminUser_id() + "'" + " target='_blank'>");
@@ -47,6 +47,13 @@
         out.write("没有用户");
     }
 %>
+<hr>
+<script language="javascript">
+    function exit() {
+        window.close();
+    }
+</script>
+<input type="button" value="退出" onclick="exit();"/>
 
 </body>
 </html>
