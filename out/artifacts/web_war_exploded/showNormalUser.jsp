@@ -33,7 +33,7 @@
                     + "密码:" + n.getUser_password() + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp"
                     + "所属部门:" + n.getDepartment());
             out.write("</span>");
-            out.write("&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "<a href='" + request.getContextPath() + "/DeleteNormalUserServlet?delete_id=" + n.getUser_id() + "'" + " target='_blank'>");
+            out.write("&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "<a href='" + request.getContextPath() + "/DeleteNormalUserServlet?delete_id=" + n.getUser_id() + "'" + "target='_blank'>");
             out.write("删除");
             out.write("</a>");
             out.write("&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "<a href='" + request.getContextPath() + "/changeNormalUser.jsp?change_id=" + n.getUser_id() + "'" + " target='_blank'>");

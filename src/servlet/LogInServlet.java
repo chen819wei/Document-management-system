@@ -33,15 +33,27 @@ public class LogInServlet extends HttpServlet {
                 //查询该用户信息
                 AdminUser adminUser = (AdminUser) session.getAttribute("user_name");
                 try {
-                            //将用户信息传递到用户界面
-                            request.setAttribute("adminUser", adminUser);
-                            session.setAttribute("user_name",adminUser);
-                            session.setAttribute("category","公文管理用户");
-                            request.setAttribute("department",new NoticeDao().selectAll(adminUser.getDepartment()));
-                            request.getRequestDispatcher("/adminUser.jsp").forward(request, response);
-                        } catch (ServletException e) {
-                            e.printStackTrace();
-                        }
+                    //将用户信息传递到用户界面
+                    request.setAttribute("adminUser", adminUser);
+                    session.setAttribute("user_name", adminUser);
+                    session.setAttribute("category", "公文管理用户");
+                    request.setAttribute("department", new NoticeDao().selectAll(adminUser.getDepartment()));
+                    request.getRequestDispatcher("/adminUser.jsp").forward(request, response);
+                } catch (ServletException e) {
+                    e.printStackTrace();
+                }
+            } else {
+                Administrator administrator= (Administrator) session.getAttribute("user_name");
+                try {
+                    //将用户信息传递到用户界面
+                    session.setAttribute("user_name", administrator);
+                    session.setAttribute("category", "管理员");
+                    request.setAttribute("administrator", administrator);
+                    request.getRequestDispatcher("/administrator.jsp").forward(request, response);
+                } catch (ServletException e) {
+                    e.printStackTrace();
+                }
+
             }
         } else {
 //获取用户选择的是哪个类型的用户
@@ -115,6 +127,8 @@ public class LogInServlet extends HttpServlet {
                             && request.getParameter("user_password").equals(administrator.getUser_password())) {
                         try {
                             //将用户信息传递到用户界面
+                            session.setAttribute("user_name", administrator);
+                            session.setAttribute("category", "管理员");
                             request.setAttribute("administrator", administrator);
                             request.getRequestDispatcher("/administrator.jsp").forward(request, response);
                         } catch (ServletException e) {

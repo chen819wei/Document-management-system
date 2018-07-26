@@ -29,12 +29,10 @@
             for (Department n : department) {
                 out.write("<li>");
                 out.write("<option>");
-                out.write(n.getDepartment_name() );
+                out.write(n.getDepartment_name());
                 out.write("</option>");
                 out.write("</li>");
             }
-
-
         } else {
             out.write("没有用户");
         }

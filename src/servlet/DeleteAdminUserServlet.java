@@ -19,10 +19,10 @@ public class DeleteAdminUserServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         int j=new AdminUserDao().delete(Integer.parseInt(request.getParameter("delete_id")));
         if (j == 0) {
-            out.print("<script language='javascript'>alert('ÓÃ»§ÒÑÉ¾³ý');window.close();</script>");
+            out.print("<script language='javascript'>alert('ÓÃ»§ÒÑÉ¾³ý');window.opener.location.reload();window.close();</script>");
             out.close();
         } else {
-            out.print("<script language='javascript'>alert('É¾³ýÊ§°Ü');window.close();</script>");
+            out.print("<script language='javascript'>alert('É¾³ýÊ§°Ü');window.opener.location.reload();window.close();</script>");
             out.close();
         }
     }

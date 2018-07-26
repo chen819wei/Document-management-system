@@ -23,10 +23,10 @@ public class ChangeNormalUserServlet extends HttpServlet {
                 , request.getParameter("department"));
         int i=new NormalUserDao().update(normalUser, Integer.parseInt(request.getParameter("id")));
         if (i == 0) {
-            out.print("<script language='javascript'>alert('修改用户信息成功');window.close();</script>");
+            out.print("<script language='javascript'>alert('修改用户信息成功');window.opener.location.reload();window.close();</script>");
             out.close();
         } else {
-            out.print("<script language='javascript'>alert('修改用户信息失败');window.close();</script>");
+            out.print("<script language='javascript'>alert('修改用户信息失败');window.opener.location.reload();window.close();</script>");
             out.close();
         }
     }

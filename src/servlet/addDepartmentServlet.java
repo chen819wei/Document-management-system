@@ -22,10 +22,10 @@ public class addDepartmentServlet extends HttpServlet {
         Department department = new Department(request.getParameter("department_name"));
         int i=new DepartmentDao().insert(department);
         if (i == 0) {
-            out.print("<script language='javascript'>alert('添加部门成功');window.close();</script>");
+            out.print("<script language='javascript'>alert('添加部门成功');window.opener.location.reload();window.close();</script>");
             out.close();
         } else {
-            out.print("<script language='javascript'>alert('添加部门失败');window.close();</script>");
+            out.print("<script language='javascript'>alert('添加部门失败');window.opener.location.reload();window.close();</script>");
             out.close();
         }
     }

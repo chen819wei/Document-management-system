@@ -21,10 +21,10 @@ public class AddNormalUserServlet extends HttpServlet {
                 , request.getParameter("department"));
         int i=new NormalUserDao().insert(normalUser);
         if (i == 0) {
-            out.print("<script language='javascript'>alert('添加用户成功');window.close();</script>");
+            out.print("<script language='javascript'>alert('添加用户成功');window.opener.location.reload();window.close();</script>");
             out.close();
         } else {
-            out.print("<script language='javascript'>alert('添加用户失败');window.close();</script>");
+            out.print("<script language='javascript'>alert('添加用户失败');window.opener.location.reload();window.close();</script>");
             out.close();
         }
     }

@@ -19,10 +19,10 @@ public class DeleteDepartmentServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         int j=new DepartmentDao().delete(Integer.parseInt(request.getParameter("delete_id")));
         if (j == 0) {
-            out.print("<script language='javascript'>alert('删除部门成功');window.close();</script>");
+            out.print("<script language='javascript'>alert('删除部门成功');window.opener.location.reload();window.close();</script>");
             out.close();
         } else {
-            out.print("<script language='javascript'>alert('删除失败');window.close();</script>");
+            out.print("<script language='javascript'>alert('删除失败');window.opener.location.reload();window.close();</script>");
             out.close();
         }
     }

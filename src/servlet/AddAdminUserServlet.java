@@ -23,10 +23,10 @@ public class AddAdminUserServlet extends HttpServlet {
                 , request.getParameter("department"));
         int i=new AdminUserDao().insert(adminUser);
         if (i == 0) {
-            out.print("<script language='javascript'>alert('添加公文用户成功');window.close();</script>");
+            out.print("<script language='javascript'>alert('添加公文用户成功');window.opener.location.reload();window.close();</script>");
             out.close();
         } else {
-            out.print("<script language='javascript'>alert('添加公文用户失败');window.close();</script>");
+            out.print("<script language='javascript'>alert('添加公文用户失败');window.opener.location.reload();window.close();</script>");
             out.close();
         }
     }
