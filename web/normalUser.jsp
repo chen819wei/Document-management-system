@@ -74,14 +74,14 @@
         if
         (confirm("您确定要退出登陆吗？")) {
             window.opener = null;
-            window.open('${pageContext.request.contextPath}/index.jsp', '_top')
+            window.open('${pageContext.request.contextPath}/exit.jsp', '_top')
             window.close();
         }
         else {
         }
     }
 </script>
-<input type="button" value="退出登陆" onclick="exit();"/>
+<input type="button" value="退出登陆" onclick="exit()<%session.invalidate();%>;"/>
 
 
 </body>

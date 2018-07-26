@@ -87,7 +87,7 @@ List<Notice> notices1 = new NoticeDao().selectAll(adminUser.getDepartment(),admi
         if
         (confirm("您确定要退出登陆吗？")) {
             window.opener = null;
-            window.open('${pageContext.request.contextPath}/index.jsp', '_top')
+            window.open('${pageContext.request.contextPath}/exit.jsp', '_top')
             window.close();
         }
         else {
