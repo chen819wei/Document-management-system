@@ -14,8 +14,18 @@ public class NoticeDao {
     //根据部门查看公文
     public List<Notice> selectAll(String department) {
         try {
-            String selectSQL = "select * from notice where department=? or department=?";
+            String selectSQL = "select * from notice where (department=? or department=?) and people is null";
             return JDBCUtil.queryRunner().query(selectSQL, new BeanListHandler<Notice>(Notice.class),department,"全部部门");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+    //根据部门查看公文
+    public List<Notice> selectAll(String department,String peopleName) {
+        try {
+            String selectSQL = "select * from notice where people=?";
+            return JDBCUtil.queryRunner().query(selectSQL, new BeanListHandler<Notice>(Notice.class),peopleName);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -59,14 +69,15 @@ public class NoticeDao {
 
     //发布公文
     public int insert(Notice notice) {
-        String insertSQL="insert into notice(title,notice,department) values(?,?,?);";
+        String insertSQL="insert into notice(title,notice,department,people) values(?,?,?,?);";
         try {
-            JDBCUtil.queryRunner().update(insertSQL, notice.getTitle(),notice.getNotice(),notice.getDepartment());
+            JDBCUtil.queryRunner().update(insertSQL, notice.getTitle(),notice.getNotice(),notice.getDepartment(),notice.getPeople());
             return 0;
         } catch (SQLException e) {
             e.printStackTrace();
             return 1;
         }
+
     }
 
 

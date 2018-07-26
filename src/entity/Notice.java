@@ -14,22 +14,34 @@ public class Notice {
     private String department;
     //公文发布时间
     private String release_time;
+    //公文某人可以见
+    private String people;
+
 
     public Notice() {
     }
 
-    public Notice(int notice_id, String title, String notice, String department, String release_time) {
-        this.notice_id = notice_id;
-        this.title = title;
-        this.notice = notice;
-        this.department = department;
-        this.release_time = release_time;
-    }
 
     public Notice(String title, String department, String notice) {
         this.title = title;
         this.notice = notice;
         this.department = department;
+    }
+
+    public String getPeople() {
+        return people;
+    }
+
+    public void setPeople(String people) {
+        this.people = people;
+    }
+
+    public Notice(String title, String notice, String department, String people) {
+        this.title = title;
+        this.notice = notice;
+        this.department = department;
+        this.people = people;
+
     }
 
     public int getNotice_id() {
@@ -80,6 +92,7 @@ public class Notice {
                 ", notice='" + notice + '\'' +
                 ", department='" + department + '\'' +
                 ", release_time='" + release_time + '\'' +
+                ", people='" + people + '\'' +
                 '}';
     }
 }

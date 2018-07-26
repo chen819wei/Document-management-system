@@ -17,14 +17,22 @@ public class ReleaseNoticeServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        Notice notice = new Notice(request.getParameter("title"), request.getParameter("department")
-                , request.getParameter("notice"));
+        Notice notice;
+        if(request.getParameter("people")!=null){
+             notice = new Notice(request.getParameter("title"), request.getParameter("department")
+                    , request.getParameter("notice"),request.getParameter("people"));
+        }else {
+             notice = new Notice(request.getParameter("title"), request.getParameter("department")
+                    , request.getParameter("notice"));
+        }
         int i = new NoticeDao().insert(notice);
         if (i == 0) {
-            out.print("<script language='javascript'>alert('公文发布成功');window.close();</script>");
+            out.print("<script language='javascript'>alert('公文发布成功');\n" +
+                    "window.opener.location.reload();window.close();</script>");
             out.close();
         } else {
-            out.print("<script language='javascript'>alert('公文发布失败');window.close();</script>");
+            out.print("<script language='javascript'>alert('公文发布失败');\n" +
+                    "window.opener.location.reload();window.close();</script>");
             out.close();
         }
     }

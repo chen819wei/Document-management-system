@@ -33,8 +33,6 @@
                 out.write("</option>");
                 out.write("</li>");
             }
-
-
         } else {
             out.write("没有用户");
         }

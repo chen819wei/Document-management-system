@@ -20,8 +20,9 @@ public class DeleteServlet extends HttpServlet {
         int j=new NoticeDao().delete(i);
         if (j == 0) {
             out.print("<script language='javascript'>alert('É¾³ý³É¹¦');window.close();</script>");
+
             //response.sendRedirect("/normalUser.jsp");
-            //request.getRequestDispatcher("/normalUser.jsp").forward(request, response);
+            request.getRequestDispatcher("/LogInServlet").forward(request, response);
             out.close();
         } else {
             out.print("<script language='javascript'>alert('É¾³ýÊ§°Ü');window.close();</script>");

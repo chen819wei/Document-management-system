@@ -21,10 +21,12 @@ public class NoticeChangeServlet extends HttpServlet {
                 , request.getParameter("notice"));
         int i=new NoticeDao().update(notice, Integer.parseInt(request.getParameter("id")));
         if (i == 0) {
-            out.print("<script language='javascript'>alert('修改成功');window.close();</script>");
+            out.print("<script language='javascript'>alert('修改成功');\n" +
+                    "window.opener.location.reload();window.close();</script>");
             out.close();
         } else {
-            out.print("<script language='javascript'>alert('修改失败');window.close();</script>");
+            out.print("<script language='javascript'>alert('修改失败');\n" +
+                    "window.opener.location.reload();window.close();</script>");
             out.close();
         }
     }

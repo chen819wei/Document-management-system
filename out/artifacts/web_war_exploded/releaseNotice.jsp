@@ -1,8 +1,6 @@
-<%@ page import="entity.Notice" %>
-<%@ page import="dao.NoticeDao" %>
-<%@ page import="entity.Department" %>
 <%@ page import="java.util.List" %>
-<%@ page import="dao.DepartmentDao" %><%--
+<%@ page import="entity.*" %>
+<%@ page import="dao.*" %><%--
   Created by IntelliJ IDEA.
   User: chen
   Date: 2018/7/21
@@ -30,13 +28,42 @@
                 out.write("</option>");
                 out.write("</li>");
             }
-
-
         } else {
             out.write("没有用户");
         }
     %>
-</select><br>
+</select>
+    选择谁可见:<select name="people">
+    <option value=""></option>
+    <%
+        List<NormalUser> normalUsers = (List<NormalUser>) new NormalUserDao().selectAll();
+        if (normalUsers != null) {
+            for (NormalUser n : normalUsers) {
+
+                out.write("<option>");
+                out.write(n.getUser_name() );
+                out.write("</option>");
+
+            }
+        } else {
+            out.write("没有用户");
+        }
+        List<AdminUser> adminUser = (List<AdminUser>) new AdminUserDao().selectAll();
+        if (normalUsers != null) {
+            for (AdminUser n : adminUser) {
+
+                out.write("<option>");
+                out.write(n.getUser_name() );
+                out.write("</option>");
+
+            }
+        } else {
+            out.write("没有用户");
+        }
+    %>
+</select>
+
+    <br>
     <hr>
     正文:<br><textarea name="notice" cols="80" rows="30" align="center"></textarea>
     <br>
