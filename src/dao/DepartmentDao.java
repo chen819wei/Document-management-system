@@ -2,10 +2,8 @@ package dao;
 
 import Util.JDBCUtil;
 import entity.Department;
-import entity.NormalUser;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
-
 import java.sql.SQLException;
 import java.util.List;
 

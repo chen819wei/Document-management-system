@@ -1,0 +1,4 @@
+运行ip：http://47.106.64.12:8080/xue/index.jsp
+普通用户账号密码：chen chen
+公文管理用户账号密码：root root
+管理员账号密码：admin admin

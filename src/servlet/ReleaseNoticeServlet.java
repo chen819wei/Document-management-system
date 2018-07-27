@@ -19,11 +19,11 @@ public class ReleaseNoticeServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         Notice notice;
         if(request.getParameter("people")!=null){
-             notice = new Notice(request.getParameter("title"), request.getParameter("department")
-                    , request.getParameter("notice"),request.getParameter("people"));
+             notice = new Notice(request.getParameter("title")
+                    , request.getParameter("notice"),request.getParameter("department"),request.getParameter("people"));
         }else {
-             notice = new Notice(request.getParameter("title"), request.getParameter("department")
-                    , request.getParameter("notice"));
+             notice = new Notice(request.getParameter("title")
+                    , request.getParameter("notice"), request.getParameter("department"));
         }
         int i = new NoticeDao().insert(notice);
         if (i == 0) {

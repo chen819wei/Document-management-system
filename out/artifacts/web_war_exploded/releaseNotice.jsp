@@ -34,7 +34,7 @@
     %>
 </select>
     选择谁可见:<select name="people">
-    <option value=""></option>
+    <option></option>
     <%
         List<NormalUser> normalUsers = (List<NormalUser>) new NormalUserDao().selectAll();
         if (normalUsers != null) {

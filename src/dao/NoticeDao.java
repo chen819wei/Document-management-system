@@ -14,7 +14,7 @@ public class NoticeDao {
     //根据部门查看公文
     public List<Notice> selectAll(String department) {
         try {
-            String selectSQL = "select * from notice where (department=? or department=?) and people is null";
+            String selectSQL = "select * from notice where (department=? or department=?) and (people is null or people=\"\");";
             return JDBCUtil.queryRunner().query(selectSQL, new BeanListHandler<Notice>(Notice.class),department,"全部部门");
         } catch (Exception e) {
             e.printStackTrace();
