@@ -9,6 +9,7 @@
           <element id="library" level="project" name="gson-2.8.4" />
           <element id="library" level="project" name="druid-1.1.8" />
           <element id="library" level="project" name="mysql-connector-java-8.0.11" />
+          <element id="library" level="project" name="mysql-connector-java-8.0.11 (2)" />
         </element>
       </element>
     </root>
