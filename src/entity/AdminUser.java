@@ -1,12 +1,12 @@
 package entity;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 /*
 *公文管理用户实体类
 * */
-@Setter@Getter
+@ToString
+@NoArgsConstructor
 public class AdminUser {
     //公文管理用户ID
     private int AdminUser_id;
@@ -17,29 +17,24 @@ public class AdminUser {
     //公文管理用户部门
     private String department;
 
+    public int getAdminUser_id() {
+        return AdminUser_id;
+    }
+    public String getUser_name() {
+        return user_name;
+    }
+    public String getUser_password() {
+        return user_password;
+    }
+    public String getDepartment() {
+        return department;
+    }
+    public void setDepartment(String department) {
+        this.department = department;
+    }
     public AdminUser(String user_name, String user_password, String department) {
         this.user_name = user_name;
         this.user_password = user_password;
         this.department = department;
-    }
-
-    public AdminUser(int adminUser_id, String user_name, String user_password, String department) {
-        AdminUser_id = adminUser_id;
-        this.user_name = user_name;
-        this.user_password = user_password;
-        this.department = department;
-    }
-
-    public AdminUser() {
-    }
-
-    @Override
-    public String toString() {
-        return "AdminUser{" +
-                "AdminUser_id=" + AdminUser_id +
-                ", user_name='" + user_name + '\'' +
-                ", user_password='" + user_password + '\'' +
-                ", department='" + department + '\'' +
-                '}';
     }
 }

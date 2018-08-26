@@ -64,7 +64,7 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="mysql-connector-java-8.0.11 (2)" level="project" />
-    <orderEntry type="library" name="lombok" level="project" />
+    <orderEntry type="library" exported="" name="lombok" level="project" />
     <orderEntry type="library" name="lombok (2)" level="project" />
   </component>
 </module>
