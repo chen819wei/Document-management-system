@@ -12,12 +12,30 @@
   <component name="ChangeListManager">
     <list default="true" id="c55511c5-c8d8-41db-b735-1d6580982db7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xue/entity/AdminUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xue/entity/AdminUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xue/entity/Administrator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xue/entity/Administrator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/xue/test/Learn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/xue/test/Learn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/AdminUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/AdminUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Administrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test/Learn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/Util/JDBCUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/dao/AdminUserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/dao/AdministratorDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/dao/DepartmentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/dao/NormalUserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/dao/NoticeDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/entity/AdminUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/entity/Administrator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/entity/Department.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/entity/NormalUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/entity/Notice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/servlet/AddAdminUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/servlet/AddNormalUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/servlet/ChangeAdminUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/servlet/ChangeDepartmentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/servlet/ChangeNormalUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/servlet/DeleteAdminUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/servlet/DeleteDepartmentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/servlet/DeleteNormalUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/servlet/DeleteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/servlet/LogInServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/servlet/NoticeChangeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/servlet/ReleaseNoticeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/xue/servlet/addDepartmentServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/xue.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xue.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,8 +60,8 @@
           <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.29" value="2" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -79,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/ChangeNormalUserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="459">
               <caret line="28" column="103" selection-start-line="28" selection-start-column="103" selection-end-line="28" selection-end-column="103" />
             </state>
           </provider>
@@ -89,29 +107,16 @@
         <entry file="file://$PROJECT_DIR$/src/servlet/AddAdminUserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
-              <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/LogInServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="70" column="37" lean-forward="true" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+              <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="jar://D:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
+        <entry file="file://$PROJECT_DIR$/src/servlet/LogInServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="3044" column="9" selection-start-line="3044" selection-start-column="9" selection-end-line="3044" selection-end-column="9" />
-              <folding>
-                <element signature="e#121412#121413#0" expanded="true" />
-                <element signature="e#121466#121467#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="405">
+              <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -253,7 +258,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="79" />
     <option name="y" value="45" />
     <option name="width" value="1177" />
@@ -264,8 +269,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,6 +334,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -375,7 +380,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.InterfaceTest">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.10">
     <configuration name="InterfaceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.InterfaceTest" />
       <module name="xue" />
@@ -654,6 +659,7 @@
       <workItem from="1534562311092" duration="6131000" />
       <workItem from="1534671900778" duration="68000" />
       <workItem from="1534855574447" duration="781000" />
+      <workItem from="1535333729495" duration="629000" />
     </task>
     <servers />
   </component>
@@ -690,13 +696,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28556000" />
+    <option name="totallyTimeSpent" value="29185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4957265" visible="true" weight="0.2322239" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4957265" visible="true" weight="0.23600605" />
       <window_info id="Structure" order="1" sideWeight="0.50427353" side_tool="true" weight="0.22239032" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" sideWeight="0.5063613" side_tool="true" weight="0.204236" />
@@ -1017,8 +1023,15 @@
     <entry file="file://$PROJECT_DIR$/test/test/Learn.java" />
     <entry file="file://$PROJECT_DIR$/src/servlet/ChangeNormalUserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="459">
           <caret line="28" column="103" selection-start-line="28" selection-start-column="103" selection-end-line="28" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddAdminUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -1057,28 +1070,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddAdminUserServlet.java">
+    <entry file="jar://D:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+        <state relative-caret-position="3742">
+          <caret line="3044" column="9" selection-start-line="3044" selection-start-column="9" selection-end-line="3044" selection-end-column="9" />
+          <folding>
+            <element signature="e#121412#121413#0" expanded="true" />
+            <element signature="e#121466#121467#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/LogInServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="70" column="37" lean-forward="true" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="3044" column="9" selection-start-line="3044" selection-start-column="9" selection-end-line="3044" selection-end-column="9" />
-          <folding>
-            <element signature="e#121412#121413#0" expanded="true" />
-            <element signature="e#121466#121467#0" expanded="true" />
-          </folding>
+          <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,83 @@
+create database document;
+use document;
+create table NormalUser(
+	user_id INT AUTO_INCREMENT  PRIMARY KEY,
+	user_name varchar(50) ,
+    user_password varchar(50),
+    department varchar(10)
+);
+
+select * from NormalUser;
+
+delete from NormalUser where user_id=1;
+
+insert into NormalUser(user_name,user_password,department) values('chen','chen','技术部');
+
+drop table notice;
+
+create table notice(
+	notice_id INT AUTO_INCREMENT  PRIMARY KEY,
+	title varchar(50) ,
+    notice TEXT(65535),
+    release_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    department varchar(10),
+    people varchar(10) default null
+);
+
+
+insert into notice(title,notice,department) values('测试','公文管理系统测试','全部部门');
+insert into notice(title,notice,department,people) values('测试','公文管理系统测试','全部部门',"chen");
+insert into notice(title,notice,department,people) values('测试','公文管理系统测试','全部部门',"root");
+
+
+select * from notice;
+
+select * from notice where (department="全部部门" or department="技术部") and (people is null or people="");
+
+select * from notice where department="全部部门" or people="chen";
+
+delete from notice where notice_id=1;
+
+create table AdminUser(
+	AdminUser_id INT AUTO_INCREMENT  PRIMARY KEY,
+	user_name varchar(50) ,
+    user_password varchar(50),
+    department varchar(10)
+);
+
+insert into AdminUser(user_name,user_password,department) values('root','root','人力资源部');
+
+select * from AdminUser;
+
+drop table AdminUser;
+
+
+
+
+
+create table Administrator(
+Administrator_id INT AUTO_INCREMENT  PRIMARY KEY,
+	user_name varchar(50) ,
+    user_password varchar(50)
+);
+
+insert into Administrator(user_name,user_password) values('admin','admin');
+
+select * from Administrator;
+
+drop table Department;
+
+create table Department(
+department_id INT AUTO_INCREMENT  PRIMARY KEY,
+	department_name varchar(50)
+);
+
+insert into Department(department_name) values('人力资源部');
+insert into Department(department_name) values('技术部');
+insert into Department(department_name) values('财务部');
+
+select * from Department;
+
+
+
+
